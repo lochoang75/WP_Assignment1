@@ -1,7 +1,7 @@
 #background_space {
 	width: 100%;
-	height:400px;
-	background-image: url(http://pre00.deviantart.net/1ecd/th/pre/f/2013/275/f/1/free__iwatobi_swim_club_logo_by_havoc3001-d6dpoyv.png);
+	height:500px;
+	background-image: url("./images/mainbackground.png");
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -13,8 +13,38 @@
 }
 }
 
+#slogan {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.archive_item {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height:40px;
+}
+
+#e27 {
+	background-image: url("./images/e27.png");
+}
+
+#tech_asia {
+	background-image:url("./images/teach-asia.png");
+}
+
+#top100 {
+	background-image:url("./images/top-100.png");
+}
+
+#fbnc {
+	background-image:url("./images/fbnc.png");
+}
+
 .achivement {
-	height: 80px; 
+	height: 50px; 
 	float:left;
 }
 
@@ -28,6 +58,14 @@
 	height:64px;
 }
 
+.Advantages {
+	width: 90px;
+	max-width: 100%;
+	display: unset;
+	vertical-align: middle;
+}
+
 .no-gutters {
 	padding: 0px;
 }
+
