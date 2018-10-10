@@ -1,0 +1,313 @@
+<script>	
+	
+	html { 
+		min-height:100%; 
+		
+	}
+	
+	body {
+		height:100%;
+		margin:0;
+		border-bottom:0;
+	}
+	
+	.divTong{
+		width:100%;
+	}
+	
+	.no-gutters {
+		padding: 0px;
+	}
+	
+	#divHeader{
+
+	}
+
+	
+
+	
+	#divSearch {
+		background: #f9f9f9;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		padding: 20px;
+		position: relative;
+	}
+	
+	#divContent{
+		margin-right: auto;
+		margin-left: 10px;
+		padding-left:10px;
+		padding-right:10px;
+
+		width: auto; *
+	}
+
+
+	
+	
+	#divCollapseSearch{
+		padding-left:25px;
+		padding-right:25px;
+	}
+	
+	.h3CollapseSearch{
+	    margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.justify-content-start{
+		
+	}
+	
+	#divCollapseSearchTV{
+	
+		
+	}
+	
+	.justify-content-start .justify-content-start{
+		width:25%;
+	}
+	
+	#divBtnApplyClearFilters{
+		margin-top: 20px;
+	}
+	
+	#btnApply{
+		width:140px;
+		height:45px;
+	}
+	
+	#btnClearFilters{
+		width:140px;
+		height:45px;
+	}
+	
+	.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+		content: none; 
+	}
+
+	.breadcrumb{
+		background-color:white;
+	}
+
+	.breadcrumb a {
+		color: #aaa;
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	#divSearchList{
+		font-size: 16px;
+		margin: 0;
+		padding: 30px 0 10px;
+	}
+	
+	#pShowSort{
+		margin-top:3px;
+	}
+		
+	#divBtnSort{
+		width: 180px;
+		height: 28px;
+	}
+
+	#btnSort{
+		width: 180px;
+		height: 28px;
+	}
+	
+	#divIconSort{
+		margin-left: 15px;
+		margin-top: 3px;
+	}
+	
+	#sortIconGrid{
+		padding-right:10px;
+
+	}
+	
+	#sortIconMap{
+		padding-right:10px;
+		color: #aaa;
+	}
+	
+	#sortIconList{
+		padding-right:10px;
+		color: #aaa;
+	}
+	
+	#sortIconProject{
+		padding-right:10px;
+		color: #aaa;
+	}
+	
+	#divImageSortResult{
+		margin-top: 20px;
+	}
+	
+	.card-deck{
+		
+	}
+	
+	.carousel-inner img {
+		width: 100%;
+		height: 170px;
+		
+	}
+	
+	
+	.card-img-overlay .float-left{
+		margin-top: -19px;
+		margin-left: -20px;
+		background-color: black;
+		height: 24px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.card-img-overlay .justify-content-center{
+		margin-top: -22px;
+		margin-right: 25px;
+		
+	}
+	
+	
+	
+	.card-body {
+		padding-left:0px;
+		width:auto;
+		overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	}
+	
+	.card-body .col{
+		padding-left:0px;
+	}
+	
+	.card-body .row{
+		margin-left:0px;
+		margin-top:20px;
+	}
+	
+	.card-body a {
+		color: #2378a7;
+	}
+	
+	.card-body a p{
+		color: #2378a7;
+	}
+	
+	@media (max-width: 0) {
+	  #divSearch{
+		
+	  }
+	}
+	
+	
+
+	
+	.pagination{
+		
+		font-size: 15px;
+	}
+	
+	.pagination>li>a { 
+		position: relative;
+		float: left;
+		padding: 6px 12px;
+		margin-left: -1px;
+		line-height: 1.42857143;
+		border: 1px solid #ddd;
+		border-radius: 50% ;
+		margin: 0 7px;
+	}
+
+	.active a{
+		background-color: #337ab7;
+	}
+	
+	#divFooterOfBody{
+		text-align: left;
+		padding-top: 20px;
+		border-top: 1px solid #c3c3c3;
+		margin-top: 50px;
+	}
+	
+	
+	#divFooter {
+		background-color: #d6d4d4;
+	}
+
+	@media (max-width: 1025px){
+		#header {
+			min-height: 65px;
+			background: #fff;
+			width: 100%;
+		}
+		
+		#divSearchMoreFilter{
+			margin-top: 10px;
+		}
+
+	
+	}
+	@media (max-width: 878px){
+		#divSearchMax{
+			margin-top: 10px;
+		}
+	
+	}
+			
+		
+	
+	@media (max-width: 700px){
+		#header {
+			min-height: 65px;
+			background: #fff;
+			width: 100%;
+		}
+		
+		#divSearchMoreFilter{
+			margin-top: 0px;
+		}
+		
+		#divSearchMax{
+			margin-top: 0px;
+		}
+	
+	}
+	
+	
+	/* Edit deck card per row */
+	@media (min-width: 0) {
+	  .card-deck .card {
+		flex: 0 0 calc(100% - 30px);
+	  }
+	}
+	@media (min-width: 576px) {
+	  .card-deck .card {
+		flex: 0 0 calc(50% - 30px);
+	  }
+	}
+	@media (min-width: 768px) {
+	  .card-deck .card {
+		flex: 0 0 calc(33.3333333333% - 30px);
+	  }
+	}
+	@media (min-width: 992px) {
+	  .card-deck .card {
+		flex: 0 0 calc(25% - 30px);
+	  }
+	}
+	@media (min-width: 1200px) {
+	  .card-deck .card {
+		flex: 0 0 calc(20% - 30px);
+	  }
+	}
+	
+</script>
+	
+	
+	

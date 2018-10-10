@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/customControl.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="css/listStyle.css">
+		<script src="script/listJs.js"></script>
+	<title>ly trong nhan-1670683-Assignment1</title>
+	</head>
+	<body>
+		<div class="container-fluid no-gutters">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Icon"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+				</button>
+				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="form-inline my-2 my-lg-0">
+						 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+
+					 <ul class="navbar-nav ml-auto ">
+						<li class="nav-item">
+							 <a class="nav-link" href="#">Rent</a>
+						</li>
+						<li class="nav-item">
+							 <a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							 <a class="nav-link" href="#">List Your House</a>
+						</li>
+						<li class="nav-item">
+							 <a class="nav-link" href="#">Careers</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+							    <a class="dropdown-item" href="#">Vietnamese</a>
+							    <a class="dropdown-item" href="#">English</a>
+							</div>
+						</li>
+					 </ul>
+				</div>
+			</nav>
+		</div>
+			
+		<div id="divSearch" class="hidden-sm-down container-fluid ">
+			<div class="row justify-content-around">
+			
+				<div id="divSearchProperties" class="col-md">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  All Properties
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">All Properties</a>
+						  <a class="dropdown-item" href="#">2+1 (office)</a>
+						  <a class="dropdown-item" href="#">Apartment</a>
+						  <a class="dropdown-item" href="#">Duplex</a>
+						  <a class="dropdown-item" href="#">Officetel</a>
+						  <a class="dropdown-item" href="#">Other</a>
+						  <a class="dropdown-item" href="#">Penthouse</a>
+						  <a class="dropdown-item" href="#">Service Apartment</a>
+						  <a class="dropdown-item" href="#">Shophouse</a>
+						  <a class="dropdown-item" href="#">Studio</a>
+						  <a class="dropdown-item" href="#">Townhouse</a>
+						  <a class="dropdown-item" href="#">Villa</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchVinCentral" class=" col-md">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  Vinhomes Central
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">Cuu Long Serviced Apartment</a>
+						  <a class="dropdown-item" href="#">GK-HOME Serviced Apartment</a>
+						  <a class="dropdown-item" href="#">Lehome serviced apartment - Binh Thanh</a>
+						  <a class="dropdown-item" href="#">Lily Service Apartment</a>
+						  <a class="dropdown-item" href="#">MH Serviced Apartment 1</a>
+						  <a class="dropdown-item" href="#">MH Serviced Apartment 2</a>
+						  <a class="dropdown-item" href="#">Nguyen Van Huong</a>
+						  <a class="dropdown-item" href="#">Phuc An Serviced Apartment</a>
+						  <a class="dropdown-item" href="#">Piano and Cafe Apartment</a>
+						  <a class="dropdown-item" href="#">Tan My</a>
+
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchBed" class=" col-md ">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  <i class="fa fa-bed">&nbsp;&nbsp;&nbsp;+</i>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" style="color:red">Any Bed</a>
+						  <a class="dropdown-item" href="#">1</a>
+						  <a class="dropdown-item" href="#">2</a>
+						  <a class="dropdown-item" href="#">3</a>
+						  <a class="dropdown-item" href="#">4</a>
+						  <a class="dropdown-item" href="#">5</a>
+						  <a class="dropdown-item" href="#">6</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchBath" class=" col-md ">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  <i class="fa fa-bath">&nbsp;&nbsp;&nbsp;+</i>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" style="color:red">Any Bath</a>
+						  <a class="dropdown-item" href="#">1</a>
+						  <a class="dropdown-item" href="#">2</a>
+						  <a class="dropdown-item" href="#">3</a>
+						  <a class="dropdown-item" href="#">4</a>
+						  <a class="dropdown-item" href="#">5</a>
+						  <a class="dropdown-item" href="#">6</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchMin" class=" col-md ">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  Min&nbsp;&nbsp;&nbsp;0 
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" style="color:red">0</a>
+						  <a class="dropdown-item" href="#">$400</a>
+						  <a class="dropdown-item" href="#">$500</a>
+						  <a class="dropdown-item" href="#">$600</a>
+						  <a class="dropdown-item" href="#">$700</a>
+						  <a class="dropdown-item" href="#">$800</a>
+						  <a class="dropdown-item" href="#">$900</a>
+						  <a class="dropdown-item" href="#">$1000</a>
+						  <a class="dropdown-item" href="#">$2000</a>
+						  <a class="dropdown-item" href="#">$3000</a>
+						  <a class="dropdown-item" href="#">$5000</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchMax" class=" col-md ">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+						  Max&nbsp;&nbsp;&nbsp;5000
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">0</a>
+						  <a class="dropdown-item" href="#">$400</a>
+						  <a class="dropdown-item" href="#">$500</a>
+						  <a class="dropdown-item" href="#">$600</a>
+						  <a class="dropdown-item" href="#">$700</a>
+						  <a class="dropdown-item" href="#">$800</a>
+						  <a class="dropdown-item" href="#">$900</a>
+						  <a class="dropdown-item" href="#">$1000</a>
+						  <a class="dropdown-item" href="#">$2000</a>
+						  <a class="dropdown-item" href="#">$3000</a>
+						  <a class="dropdown-item" href="#" style="color:red">$5000</a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="divSearchMoreFilter" class=" col-md ">
+					<div class="dropdown">
+						<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="collapse" data-target="#divCollapseSearch">
+						   <i class="material-icons" style="font-size:18px;color:red">notifications</i> MORE FILTER
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>	
+			
+			
+		<div id="divContent">
+		
+			<div id="divCollapseSearch" class="container-fluid collapse">
+				
+				<div class="d-flex justify-content-end">
+					<i class="fa fa-close" id="iconClose" style="font-size:36px;color:red" onclick=""></i>
+				</div>
+				
+				<h4 class="h3CollapseSearch">Basic Feature</h4>
+			
+				<div class="row justify-content-around">
+				
+					<div id="divCollapseSearchAccommodates" class="col-md-5 ">
+						<div class="dropdown">
+							<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+							  Accommodates
+							</button>
+							<div class="dropdown-menu">
+							  <h5 class="dropdown-header">Accommodates</h5>
+							  <a class="dropdown-item" href="#">1</a>
+							  <a class="dropdown-item" href="#">2</a>
+							  <a class="dropdown-item" href="#">3</a>
+							  <a class="dropdown-item" href="#">4</a>
+							  <a class="dropdown-item" href="#">5</a>
+							  <a class="dropdown-item" href="#">5+</a>
+		
+							</div>
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchFurnishment" class="col-md-5 ">
+						<div class="dropdown">
+							<button type="button" class="btn btn-outline-secondary btn-block dropdown-toggle" data-toggle="dropdown">
+							  Furnishment
+							</button>
+							<div class="dropdown-menu">
+							  <h5 class="dropdown-header">Furnishment</h5>
+							  <a class="dropdown-item" href="#">Fully Furnishment</a>
+							  <a class="dropdown-item" href="#">Semi Furnishment</a>
+							  <a class="dropdown-item" href="#">UnFurnishment</a>
+
+		
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+				<h4 class="h3CollapseSearch">Required Amenities</h4>
+				
+				<div id="divCollapseSearchRequired" class="row justify-content-start">
+			
+					<div id="divCollapseSearchTV" class="row justify-content-start">					
+						<div  class="col-md">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;TV
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchMicrowave" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Microwave
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchAirConditioner" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Air Conditioner
+						</div>
+					</div>
+				
+					<div id="divCollapseSearchSmokeDetector" class="row justify-content-start">					
+						<div  class="col-md">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Smoke Detector
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchFireExtinguisher" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Fire Extinguisher
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchBalcony" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Balcony
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchBathtub" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Bathtub
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchGeyser" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Geyser
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchDishWasher" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Dish Washer
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchElectricChimney" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Electric Chimney
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchParking" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Parking
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchRoomHeater" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Room Heater
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchFirstAidKit" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;First Aid Kit
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchEssentials" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Essentials
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchPetAllowed" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Pet Allowed
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchPool" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Pool
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchKitchen" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Kitchen
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchElevator" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Elevator
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchWashingMachine" class="row justify-content-start">					
+						<div  class="col-md ">
+							<label class="switch ">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Washing Machine
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchWiFi" class="row justify-content-start">					
+						<div  class="col-md">
+							<label class="switch">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Wi-Fi
+						</div>
+					</div>
+					
+					<div id="divCollapseSearchInternet" class="row justify-content-start">					
+						<div  class="col-md">
+							<label class="switch">
+							  <input type="checkbox" class="primary">
+							  <span class="slider round"></span>
+							</label>
+							&nbsp;Internet
+						</div>
+					</div>
+					
+				</div>
+				<div id="divBtnApplyClearFilters" class="row">
+					<button id="btnApply" type="button" class="btn btn-primary">
+							  Apply
+					</button>
+					<button id="btnClearFilters" type="button" class="btn btn-light">
+							  Clear Filters
+					</button>
+				</div>
+			</div>
+			
+			
+			<div class="row bc-icons-2">
+				 <ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<i class="fa fa-home" style="color:#aaa"></i>
+						<i class="fa fa-angle-right mx-2" aria-hidden="true"></i>
+					</li>
+					<li class="breadcrumb-item">
+						<a class="black-text" href="#">
+							Ho Chi Minh
+						</a>
+						<i class="fa fa-angle-right mx-2" aria-hidden="true"></i>
+					</li>
+					<li class="breadcrumb-item">
+						<a class="black-text" href="#">
+							Binh Thanh District
+						</a>
+						<i class="fa fa-angle-right mx-2" aria-hidden="true"></i>
+					</li>
+					<li class="breadcrumb-item">
+						<a class="black-text" href="#">
+							Vinhomes Central Park
+						</a>
+					</li>
+				</ol>
+			</div>
+			
+			<h4>VINHOMES CENTRAL PARK FOR RENT</h4>
+			
+			<div id="divSearchList" class="row">
+				<p id="pShowSort">Show 15 in &nbsp;<b>3805 Listing</b> Sort by &nbsp; </P>
+				<div id="divBtnSort" class="dropdown">
+						<button id="btnSort" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#"></a>
+						  <a class="dropdown-item" href="#">Recent Post</a>
+						  <a class="dropdown-item" href="#">Sort by Price (low to hight)</a>
+						  <a class="dropdown-item" href="#">Sort by Price (high to low)</a>
+
+						</div>
+				</div>
+				
+				<div id="divIconSort" class="row">
+					<a data-placement="top" data-toggle="tooltip" title="Grid">
+						<i id="sortIconGrid" class="fa fa-th-large" ></i>
+					</a>
+					<a data-placement="top" data-toggle="tooltip" title="Map">
+						<i id="sortIconMap" class="fa fa-map" onmouseover="mouseOverIconMap(this)" onmouseout="mouseOutIconMap(this)"></i>
+					</a>
+					<a data-placement="top" data-toggle="tooltip" title="List">
+						<i id="sortIconList" class="fa fa-bars" onmouseover="mouseOverIconList(this)" onmouseout="mouseOutIconList(this)"></i>
+					</a>
+					<a data-placement="top" data-toggle="tooltip" title="Project">
+						<i id="sortIconProject" class="fa fa-bank" onmouseover="mouseOverIconProject(this)" onmouseout="mouseOutIconProject(this)"></i>
+					</a>
+				</div>
+			</div>
+			<div id="divImageSortResult" class="">
+				<div class="card-deck">
+				
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort1" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort1" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort1" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort1" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/02-premierroom01_orig.jpg" alt="room1">
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2">
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3">
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1800<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort1" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort1" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 3 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 2 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+				
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort2" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort2" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort2" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort2" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/Half-Page-Size-Laurel-Room.jpg" alt="room1">
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1200<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort2" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort2" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 2 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 2 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort3" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort3" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort3" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort3" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/Jan_2018_bedroom.jpg" alt="room1">
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2">
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" width="225">
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1100<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort3" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort3" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 3 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+				
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort4" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort4" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort4" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort4" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/living-room-2732939_960_720.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$800<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort4" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort4" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 1 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 2 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+			
+					<div class="card  my-3 border border-0">
+						<div id="divCarouselImageSort5" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort5" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort5" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort5" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/living-room-intro.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$700<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort5" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort5" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 1 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort6" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort6" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort6" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort6" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/pexels-photo-439227.jpeg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1500<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort6" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort6" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 3 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 4 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort7" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort7" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort7" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort7" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/rooms.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$2100<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort7" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort7" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 5 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 5 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort8" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort8" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort8" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort8" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/standard_ph04.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$600<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort8" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort8" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 4 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort9" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort9" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort9" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort9" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/zoomrooms-one_f42b900.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$2400<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort9" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort9" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 3 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 2 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort10" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort10" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort10" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort10" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/IOT_AllWhiteRoom_Image-1024x683.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$500<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort10" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort10" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 4 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort11" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort11" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort11" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort11" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/Casa-di-Marco-Roberta-Scandinavian-Living-Room-Rome-by-Maurizio-Giovannoni-Architetto-2018-01-26-16-42-41.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1300<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort11" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort11" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 4 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort12" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort12" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort12" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort12" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/61268922.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1200<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort12" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort12" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 5 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort13" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort13" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort13" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort13" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/std-1080.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1400<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort13" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort13" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 5 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 3 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort14" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort14" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort14" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort14" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/deluxe1.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$2400<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort14" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort14" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 5 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 4 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+					
+					<div class="card my-3 border border-0">
+						<div id="divCarouselImageSort15" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ul class="carousel-indicators">
+								<li data-target="#divCarouselImageSort15" data-slide-to="0" class="active"></li>
+								<li data-target="#divCarouselImageSort15" data-slide-to="1"></li>
+								<li data-target="#divCarouselImageSort15" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/Photo+Room.jpg" alt="room1" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Deluxe_King_Guest_Room_575035_high.jpg" alt="room2" >
+								</div>
+								<div class="carousel-item">
+								  <img src="images/Groningen_Student_Room-2.jpg" alt="room3" >
+								</div>
+							</div>
+							<div class="card-img-overlay">
+								<div class="float-left text-uppercase">
+								   <p class="text-white">$1600<p>
+								</div>
+								<div class="d-flex justify-content-center">
+									<i class="fa fa-heart-o" style="font-size:28px;color:white" onclick="changeToHeartFull(this)"></i>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#divCarouselImageSort15" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#divCarouselImageSort15" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+						
+						<div class="card-body">
+							<div class="col">
+								<a href="#" class="card-title">
+									<p>HOUSE CODE H130121</p>
+								</a>
+							    <a href="#" title="Pleasantly designed 3 bedrooms apartment in Binh Thanh District">
+								  Pleasantly designed 3 bedrooms apartment in Binh Thanh District
+							    </a>
+							    <div class="row">
+								  <i class="fa fa-bed" >&nbsp; 2 bed &nbsp;</i>
+								  <i class="fa fa-bath">&nbsp; 2 bath </i>
+								  <i class="material-icons" style="font-size:16px;" title="Binh_Thanh_District">location_onBT </i>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="d-flex justify-content-center">
+					<ul class="pagination">
+					  <li><a href="#">&lt;</a></li>
+					  <li class="active "><a class="text-white" href="#">1 <span class="sr-only">(current)</span></a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">...</a></li>
+					  <li><a href="#">40</a></li>
+					  <li><a href="#">></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="divFooterOfBody" class="col border-top">
+				<p>Apartment for rent in Vinhomes Central Park List - We provide you 
+				various choices of apartment for lease in Vinhomes Central Park, Binh Thanh District
+				, Ho Chi Minh City, Vietnam. Long term rental - 6 month at least.</p>
+			</div>
+			
+			
+
+		</div>
+		
+		
+		
+		<div id="divFooter" class="container-fluid no-gutters border-top">
+			<div class="page-footer blue pt-4"> 
+				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="float: left;">
+						<h3> Stay Connected </h3>
+						<p> Join over 3000 people who receive rental advice and best property deals </p>
+						<form>
+							<div class="form-group">
+									<input type="email" class="form-control" placeholder="Your email address">
+							</div>
+							<button type="submit" class="btn btn-primary" style="width:240px;"> Send </button>
+						</form>
+				</div>
+				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="float: left;">
+						<div>
+							<h3> Company</h3>
+							<a href="#"> About </a>
+							<br>
+							<a href="#"> Careers </a>
+						</div>
+						<div>
+							<h3> Support </h3>
+							<a href="#"> Contact Us </a>
+						</div>
+				</div>
+				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="float: left;">
+						<h3> Project </h3>
+				</div>
+				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="float: left;">
+						<h3> Preferences </h3>
+						<select class="form-control" name="Currency">
+							<option value="US"> US Dollar </option>
+							<option value="VND"> VND </option>
+						</select>
+				</div>
+				<div style="clear: both">
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
