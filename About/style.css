@@ -19,6 +19,11 @@
 	margin-bottom: 20px;
 }
 
+.content {
+	padding: 10px 20px;
+	text-align: justify;
+	font-size: 16px;
+}
 .archive_item {
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -63,6 +68,10 @@
 	max-width: 100%;
 	display: unset;
 	vertical-align: middle;
+}
+
+#divFooter {
+		background-color: #d6d4d4;
 }
 
 .no-gutters {
