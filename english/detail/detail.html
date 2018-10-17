@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<title>Detail</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="img/logosm1.png" type="image/x-icon" rel="shortcut icon">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css"/> 
+<script  src="js/jquery.min.js"></script>
+<script  src="js/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+<link href="responsive.css" rel="stylesheet" type="text/css"/>
+<!-- MENU -->
+<link type="text/css" rel="stylesheet" href="js/menu/jquery.mmenu.all.css">
+<script  src="js/menu/jquery.min.js"></script>
+<script  src="js/menu/jquery.mmenu.min.all.js"></script>
+	 <script >
+		jQuery.noConflict()(function($) {
+			
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide-menu', 'pageshadow' ],
+					searchfield	: false,
+					counters	: false,
+					navbar 		: {
+						title		: 'MENU'
+					},
+					navbars		: [
+						 {
+							position	: 'top',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}, {
+							position	: 'bottom',
+							content		: [
+							''
+							]
+						}
+					]
+				});
+			});
+		</script>
+<!-- NIVO -->
+<link rel="stylesheet" href="js/nivo_repo/default.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="js/nivo_repo/nivo-slider.css" type="text/css" media="screen"/>
+<script src="js/nivo_repo/jquery.min.js"></script> 
+<script  src="js/nivo_repo/jquery.nivo.slider.js"></script>
+<script >
+jQuery.noConflict()(function($) {	
+	$(window).ready(function() {
+		$('.mt_slide').nivoSlider({ 																				
+			pauseTime: 5000, 										
+		});	
+			
+	});
+});	
+</script> 
+<!-- OWL CAROUSEL -->
+<link rel="stylesheet" href="js/owl.carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="js/owl.carousel/owl.theme.default.min.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/owl.carousel/owl.carousel.js"></script>				
+<script>					   
+$(document).ready(function() {
+ $(".aloha").owlCarousel({
+	loop:true,
+	autoHeight: true,
+	nav:true,
+	dots:false,
+	autoplay:true,
+	autoplayTimeout:2000,
+	autoplayHoverPause:true,
+	vertical:false,
+	responsive:{
+		0:{
+  			items:1, // In this configuration 1 is enabled from 0px up to 479px screen size 
+			},
+		300:{
+			items:1, // from 401 to 600
+			margin:0,	
+			},
+		401:{
+			items:2, // from 401 to 600
+			margin:10,	
+			},
+		601:{
+			items:3,
+			margin:20,			  
+			},
+		769:{
+ 			items:4,       
+ 			margin:20,			 
+			},
+		1201:{
+ 			items:4,       
+ 			margin:30,				 
+			},			
+			}
+  }); 
+});
+</script>
+<!-- WOW -->
+
+<script>
+$(document).ready(function(){
+    $("#d_button").click(function(){
+        $("#d_toggle").toggle();
+    });
+});
+</script>
+</head>
+<body>
+	<div class="d_segment_header">
+		<div class="container">
+			<div class="d_logo"><a href="../../english/index/index.html"><img alt="" src="../index/image/logo/logo-BK.png"/></a></div>
+			<div class="d_search tr_pc">
+				<div class="search_text"><input type="text" placeholder="Search" value=""/></div>
+				<div class="search_submit"><input type="submit" value="Search"/></div>
+				<div class="container"></div>
+			</div>
+			<ul class="tr_pc">
+				<li><a href="../../english/list/list.html" target="_self">Rent</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">List Your House</a></li>
+				<li><a href="#">Carrer</a></li>
+				<li id="d_button"><a href="#">Language
+					<div class="d_lang" style="display:none" id="d_toggle">
+						<div><a href="#">Vietnamese</a></div>
+						<div><a href="#">English</a></div>	
+					</div>
+				</li>
+			</ul>
+			<div id="page" class="menu_mobile tr_mobile" style="animation: 4s fadeIn;">
+					<div class="header1">
+						<a href="#menu"></a>
+					</div>
+							
+					<nav id="menu">
+						<ul>
+							<li><a href="../list/list.html" target="_self">Rent</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">List Your house</a></li>
+							<li><a href="#">Carrer</a></li>
+							<li><a href="#">Language
+								<ul>
+									<li><a href="#">Vietnamese</a></li>
+									<li><a href="#">English</a></li>	
+								</ul>
+							</li>
+							<div class="clear"></div>
+						</ul>
+					</nav>
+				</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="d_segment_banner">
+		<div class="d_slide" >					 
+			<div class="slider-wrapper theme-default">	
+				<div class="mt_slide nivoSlider">													
+						<a href="#"><img alt="" src="img/banner1.png"></a>
+						<a href="#"><img alt="" src="img/banner2.png"></a>											
+				</div>											
+				<div id="htmlcaption" class="nivo-html-caption"></div>										
+			</div>									
+		</div>
+	</div>
+	<div class="d_segment_main">
+		<div class="container">
+			<div class="dmain_left">
+				<div class="main_title">
+					<ul class="d_overflow">
+						<li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+						<li><a href="../../english/list/list.html" target="_self"><i class="glyphicon glyphicon-menu-right"></i>Ho Chi Minh</a></li>
+						<li><a href="../../english/list/list.html" target="_self"><i class="glyphicon glyphicon-menu-right"></i>District 1</a></li>
+						<li><a href="../../english/list/list.html" target="_self"><i class="glyphicon glyphicon-menu-right"></i>Vinhome golden river</a></li>
+						<li><a href="../../english/detail/detail.html" target="_self"><i class="glyphicon glyphicon-menu-right"></i>h136639</a></li>
+					</ul>
+				</div>
+				<div class="dsub_title">
+					<ul class="d_overflow">
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">Summary</a></li>
+						<li><a href="#">Amenities</a></li>
+						<li><a href="#">Facilities</a></li>
+						
+					</ul>
+				</div>
+				<div class="dbody_title">VINHOMES GOLDEN RIVER APARTMENT 3 BEDROOMS - FULLY FURNISHED & DECENT & STUNNING</div>
+				<div class="ud_overview">
+					<div class="d_overview">
+						<h3>Overview</h3>
+						<ul class="d_overflow">
+							<li><i class="fa fa-building-o"></i>Apartment</li>
+							<li><i class="fa fa-area-chart"></i>123.20 m2</li>
+							<li><i class="fa fa-joomla" aria-hidden="true"></i>2 Bedroom(s)</li>
+							<li><i class="fa fa-bed"></i>3 Bathroom(s)</li>
+							<li><i class="fa fa-group"></i>5+ Accommodate(s)</li>
+							<li><i class="fa fa-umbrella"></i>Furniture: Full</li>
+						</ul>
+					</div>
+					<div class="over_img">
+						<ul class="d_overflow">
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+							<li><a href="#"><img alt="" src="img/over_image.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="d_des">
+					<div class="des_title">Description</div>
+					<div class="des_content">
+						Address: Ton Duc Thang Street, District 1 Overview: modern design, large balcony, bright open living space, panoramic view of Saigon River Project Facility: parking lot, Central Plaza, children's playground, convenient stores, history square, sculpture square, international garden, outdoor gym and fitness area, multi-purpose courtyard, golf putting green Nearby places: Zoo, Botanic Garden, Universities, historic places Traffic: 5 minutes to Binh Thanh District, 5 minutes to Ben Thanh Market, 15
+					</div>
+				</div>
+				<div class="d_des">
+					<div class="des_title">Summary</div>
+					<div class="des_content">
+						Rent Vinhomes Golden River Apartment at Ton Duc Thang Street, Ben Nghe Ward, District 1, Ho Chi Minh. Decent & Stunning Apartment near Saigon Zoo & Botanical Garden that has Building View, long-time rental for at least 6 months.
+					</div>
+				</div>
+				<div class="d_amenities">
+					<h2>AMENITIES</h2>
+					<ul class="d_overflow">
+						<li><div class="d_inline"><i class="fa fa-television" aria-hidden="true"></i>TV</div></li>
+						<li><div class="d_inline"><i class="fa fa-hdd-o" aria-hidden="true"></i>Microwave</div></li>
+						<li><div class="d_inline"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Air conditioner</div></li>
+						<li><div class="d_inline"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</div></li>
+						<li><div class="d_inline"><i class="fa fa-television" aria-hidden="true"></i>TV</div></li>
+						<li><div class="d_inline"><i class="fa fa-hdd-o" aria-hidden="true"></i>Microwave</div></li>
+						<li><div class="d_inline"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Air conditioner</div></li>
+						<li><div class="d_inline"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</div></li>
+						<li><div class="d_inline"><i class="fa fa-television" aria-hidden="true"></i>TV</div></li>
+						<li><div class="d_inline"><i class="fa fa-hdd-o" aria-hidden="true"></i>Microwave</div></li>
+						<li><div class="d_inline"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Air conditioner</div></li>
+						<li><div class="d_inline"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</div></li>
+						<li><div class="d_inline"><i class="fa fa-television" aria-hidden="true"></i>TV</div></li>
+						<li><div class="d_inline"><i class="fa fa-hdd-o" aria-hidden="true"></i>Microwave</div></li>
+						<li><div class="d_inline"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Air conditioner</div></li>
+						<li><div class="d_inline"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</div></li>
+						<li><div class="d_inline"><i class="fa fa-television" aria-hidden="true"></i>TV</div></li>
+						<li><div class="d_inline"><i class="fa fa-hdd-o" aria-hidden="true"></i>Microwave</div></li>
+						<li><div class="d_inline"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Air conditioner</div></li>
+						<li><div class="d_inline"><i class="fa fa-wifi" aria-hidden="true"></i>Wifi</div></li>
+					</ul>
+				</div>
+				<div class="d_amenities">
+					<h2>FACITLITIES</h2>
+					<ul class="d_overflow">
+						<li><div class="d_inline"><i class="fa fa-cutlery" aria-hidden="true"></i>Restaurant</div></li>
+						<li><div class="d_inline"><i class="fa fa-cart-plus" aria-hidden="true"></i>Shopping Mall</div></li>
+						<li><div class="d_inline"><i class="fa fa-money" aria-hidden="true"></i>Banking</div></li>
+						<li><div class="d_inline"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee Shop</div></li>
+						<li><div class="d_inline"><i class="fa fa-cutlery" aria-hidden="true"></i>Restaurant</div></li>
+						<li><div class="d_inline"><i class="fa fa-cart-plus" aria-hidden="true"></i>Shopping Mall</div></li>
+						<li><div class="d_inline"><i class="fa fa-money" aria-hidden="true"></i>Banking</div></li>
+						<li><div class="d_inline"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee Shop</div></li>
+						<li><div class="d_inline"><i class="fa fa-cutlery" aria-hidden="true"></i>Restaurant</div></li>
+						<li><div class="d_inline"><i class="fa fa-cart-plus" aria-hidden="true"></i>Shopping Mall</div></li>
+						<li><div class="d_inline"><i class="fa fa-money" aria-hidden="true"></i>Banking</div></li>
+						<li><div class="d_inline"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee Shop</div></li>
+						<li><div class="d_inline"><i class="fa fa-cutlery" aria-hidden="true"></i>Restaurant</div></li>
+						<li><div class="d_inline"><i class="fa fa-cart-plus" aria-hidden="true"></i>Shopping Mall</div></li>
+						<li><div class="d_inline"><i class="fa fa-money" aria-hidden="true"></i>Banking</div></li>
+						<li><div class="d_inline"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee Shop</div></li>
+						<li><div class="d_inline"><i class="fa fa-cutlery" aria-hidden="true"></i>Restaurant</div></li>
+						<li><div class="d_inline"><i class="fa fa-cart-plus" aria-hidden="true"></i>Shopping Mall</div></li>
+						<li><div class="d_inline"><i class="fa fa-money" aria-hidden="true"></i>Banking</div></li>
+						<li><div class="d_inline"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee Shop</div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dmain_right">
+				<div class="d_info">
+					<div class="info_money"><span>$2,700</span> per month</div>
+					<ul>
+						<li><input type="text" placeholder="Your name"/></li>
+						<li>
+							<div class="d_option">
+									<select>
+										<option>+84</option>
+										<option>+80</option>
+									</select>
+							</div>
+							<div class="d_select">
+								<input type="text" placeholder="Your phone"/>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li><input type="text" placeholder="Your name"/></li>
+						<li><textarea type="text" placeholder="Your name"></textarea></li>
+					</ul>
+					<div class="d_req"><a href="#">Request inspection</a></div>
+				</div>
+				<div class="d_proj">
+					<div class="proj_title">view project info</div>
+					<div class="proj_img">
+						<a href="../list/list.html" target="_self"><img src="img/img1.jpg"/></a>
+					</div>
+					<div class="proj_cont">
+						<a href="../list/list.html" target="_self"><p style="margin-bottom:5px;"><b>Vinhomes Golden River</b></p></a>
+						<p>VINHOMES GOLDEN RIVER – NEW ATTACK IN REAL ESTATE</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="d_proj">
+					<div class="proj_title">VIEW NEIBOURHOOD</div>
+					<div class="proj_img">
+						<a href="../list/list.html" target="_self"><img src="img/img1.jpg"/></a>
+					</div>
+					<div class="proj_cont">
+						<a href="../list/list.html" target="_self"><p style="margin-bottom:5px;"><b>Phu My Hung</b></p></a>
+						<p>SAI GON MORDERN URBAN DISTRICT</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="d_maps">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0938062915493!2d106.80360881528252!3d10.880469542250994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8aff6483ed7%3A0x653f71ec234a5e43!2zxJBIIELDoWNoIEtob2EgY8ahIHPhu58gMg!5e0!3m2!1svi!2s!4v1538992004803" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="d_product">
+		<div class="container">
+			<ul class="aloha">
+				<li>
+					<div class="pro_img"><a href="../detail/detail.html" target="_self"><img src="img/proimg.jpg"/></a></div>
+					<div class="pro_title"><a href="../detail/detail.html" target="_self">House code</a></div>
+					<div class="pro_cont"><a href="../detail/detail.html" target="_self">Vinhomes Golden River</a></div>
+				</li>
+				<li>
+					<div class="pro_img"><a href="../detail/detail.html" target="_self"><img src="img/proimg.jpg"/></a></div>
+					<div class="pro_title"><a href="../detail/detail.html" target="_self">House code</a></div>
+					<div class="pro_cont"><a href="../detail/detail.html" target="_self">Vinhomes Golden River</a></div>
+				</li>
+				<li>
+					<div class="pro_img"><a href="../detail/detail.html" target="_self"><img src="img/proimg.jpg"/></a></div>
+					<div class="pro_title"><a href="../detail/detail.html" target="_self">House code</a></div>
+					<div class="pro_cont"><a href="../detail/detail.html" target="_self">Vinhomes Golden River</a></div>
+				</li>
+				<li>
+					<div class="pro_img"><a href="../detail/detail.html" target="_self"><img src="img/proimg.jpg"/></a></div>
+					<div class="pro_title"><a href="../detail/detail.html" target="_self">House code</a></div>
+					<div class="pro_cont"><a href="../detail/detail.html" target="_self">Vinhomes Golden River</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer2">
+		<div class="page-footer2 blue pt-4">
+				<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<h3> <b>Stay Connected</b> </h3>
+								<p>Join over 3000 people who receive rental advice and best property deals</p>
+								<form>
+									<div class="form-group">
+											<input type="email" class="form-control" placeholder="Your email">
+									</div>
+									<button type="submit" class="btn btn-primary">Send</button>
+								</form>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<div>
+									<h3> <b>Company</b> </h3>
+									<a href="../about/about.html" target="_self">About</a>
+									<br>
+								</div>
+								<div>
+									<p></p>
+									<h3> <b>Support</b> </h3>
+									<a href="../contact/contact-us.html">Contact us</a>
+								</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+								<h3> <b>Preferences</b> </h3>
+								<select class="form-control" name="Currency">
+									<option value="US">US Dollar</option>
+									<option value="VND">VND</option>
+								</select>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<h3> <b>Project</b> </h3>
+								<figure>
+									<img src="../index/image/fearture-list1.png" alt="Hình đại diện cho Feature Project Vinhomes">
+								</figure>
+								<div class="featured-list-text">
+									<h4 class="one-line2">Vinhomes Central Park</h4>
+									</div>
+							</div>
+					</div>
+		</div>
+	</div>	
+</body>
+</html>

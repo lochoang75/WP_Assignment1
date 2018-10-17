@@ -77,3 +77,20 @@ input:checked + .slider:before {
 
 /* custom pagination*/
 
+
+
+#footer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-style: normal;
+}
+.page-footer img{
+  width: 100%;
+  height: auto;
+}
+.page-footer p{
+  font-size: 14px;
+}
+
+

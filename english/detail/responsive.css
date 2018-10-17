@@ -1,0 +1,147 @@
+@media screen and (max-width: 1348px){
+	.container	{
+		width:1170px;
+	}
+	.owl-theme .owl-controls .owl-nav .owl-next	{
+		right:-5px;
+	}
+	.owl-theme .owl-controls .owl-nav .owl-prev	{
+		left:-5px;
+	}
+}
+
+@media screen and (max-width: 1169px){
+	.tr_mobile	{
+	  display:block!important;
+	}
+	.tr_pc	{
+	  display:none!important;
+	}
+	.main	{
+		width:100%;
+	}
+	.container{
+		width:100%;
+		padding:0 5px;
+	}
+	img{
+		max-width:100%;
+	}
+	.dmain_left{
+		width:100%;
+		float:none;
+	}
+	.dbody_title{
+		font-size:16px;
+	}
+	.des_title{
+		text-align:center;
+		margin-top:30px;
+	}
+	.des_content{
+		text-align:justify;
+	}
+	.d_overview h3{
+		text-align:center;
+	}
+	.d_amenities h2{
+		text-align:center;
+		font-size:16px;
+	}
+	.d_amenities ul li{
+		width:50%;
+		/* text-align:center; */
+	}
+	.d_inline{
+		/* display:inline-block; */
+		width: 117px;
+		margin: 0 auto;
+	}
+	.dmain_right{
+		width:100%;
+		float:none;
+	}
+	.proj_title{
+		text-align:center;
+		margin-bottom: 20px;
+	}
+	.proj_img{
+		float:none;
+		margin:0 auto;
+	}
+	.proj_cont{
+		float:none;
+		margin:0 auto;
+		text-align:center;
+	}
+	.aloha .owl-controls{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.d_overview ul li{
+		width:32%;
+		margin-left:2%;
+	}
+	.d_overview ul li:nth-child(4n+1){
+		margin-left:2%;
+		clear:none;
+	}
+    .d_overview ul li:nth-child(3n+1){
+		margin-left:0;
+		clear:both;
+	}
+	.over_img ul li{
+		width:23.5%;
+		margin-left:2%;
+	}
+	.over_img ul li:nth-child(6n+1){
+		clear:none;
+		margin-left:2%;
+	}
+	.over_img ul li:nth-child(4n+1){
+		clear:both;
+		margin-left:0;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+}	 
+
+@media screen and (max-width: 480px){
+	.d_overview ul li{
+		width:49%;
+		margin-left:2%;
+	}
+	.d_overview ul li:nth-child(3n+1){
+		margin-left:2%;
+		clear:none;
+	}
+    .d_overview ul li:nth-child(2n+1){
+		margin-left:0;
+		clear:both;
+	}
+	.over_img ul li{
+		width:49%;
+		margin-left:2%;
+	}
+	.over_img ul li:nth-child(4n+1){
+		clear:none;
+		margin-left:2%;
+	}
+	.over_img ul li:nth-child(2n+1){
+		clear:both;
+		margin-left:0;
+	}
+	
+}
+
+@media screen and (max-width: 320px){
+    
+}
+
+@media screen and (max-width: 240px){
+    
+}
