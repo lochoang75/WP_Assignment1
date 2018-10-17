@@ -76,7 +76,7 @@ body {
 .text-search {
     width: 85%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 100px;
     margin: auto;
 }
 
@@ -209,3 +209,7 @@ p.info-desc{
 .page-footer p{
     font-size: 14px;
   }
+
+.card {
+    margin-top: 50px;
+}

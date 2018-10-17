@@ -209,3 +209,7 @@ p.info-desc{
 .page-footer p{
     font-size: 14px;
   }
+
+.card {
+    margin-top: 50px;
+}
