@@ -291,10 +291,20 @@
 	  .card-deck .card {
 		flex: 0 0 calc(100% - 30px);
 	  }
+	  #divCollapseSearch .row{
+		margin-left:0px;
+		margin-right:20px;
+	  
+	  }
 	}
 	@media (min-width: 576px) {
 	  .card-deck .card {
 		flex: 0 0 calc(50% - 30px);
+	  }
+	  #divCollapseSearch .row{
+		margin-left:0px;
+		margin-right:20px;
+	  
 	  }
 	}
 	@media (min-width: 768px) {

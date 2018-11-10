@@ -1,0 +1,161 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Tahoma';
+}
+@font-face {
+    font-family: 'Title-search';
+    src: url('../font/Ahamono.ttf');
+}
+.addfont {
+    font-family: 'Title-search';
+}
+
+.navbar-brand img{
+    width: 55px;
+}
+
+#main-background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+    max-height: 600px;      
+}
+
+#footer {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+#main-full {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    display: block;
+}
+.title-search {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.title-search p {
+    font-size: 60px;
+    margin-top: 40px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+}
+.title-search h4 {
+    font-family: 'Tahoma';
+    color: black;
+    margin-top: 80px;
+}
+.title-search h2 {
+    font-size: 35px;
+    height: 65px;
+    font-family: 'Arial';
+    color: white;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.cangiua{
+    display: block;
+    margin: auto;
+}
+
+.one-line{
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+.one-line2{
+    font-size: 15px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-align: center;
+}
+p.in-fo{
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+}
+p.info-desc{
+    font-size: 13px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.btn-featured{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+
+.form-control option{
+    font-size: 12px;
+}
+
+.col-md-3 button{
+    width: 100%;
+}
+
+.page-footer img{
+    width: 100%;
+    height: auto;
+}
+.page-footer p{
+    font-size: 14px;
+  }
+
+.title{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.marginbot50{
+    margin-bottom: 50px;
+}
+.title p{
+    font-size: 25px;
+    font-family: 'Title-search';
+
+}
+.title a{
+    font-weight: bold;
+}
+.kichthuocinput input{
+    word-wrap: break-word;
+}
+.button-sub{
+    width: 60%;
+    margin: auto;
+}
+row.button{
+    width: 40%;
+}
