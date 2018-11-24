@@ -1,0 +1,23 @@
+@font-face{
+    src:url(font/HelveticaNeue-light.otf);
+    font-family: 'HelveticaNeue'
+}
+body {
+    font-family: 'Arial';
+    font-size: 13px;
+}
+.no-gutters {
+    padding: 0px;
+}
+
+#main-img {
+    background: url(image/index-background1.jpg);
+}
+
+.error {
+	border: solid 1px #ff0000;
+}
+
+.error_text {
+	color: #ff0000;
+}

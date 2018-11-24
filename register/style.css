@@ -1,0 +1,14 @@
+@font-face{
+    src:url(font/HelveticaNeue-light.otf);
+    font-family: 'HelveticaNeue'
+}
+body {
+    font-family: 'Arial';
+    font-size: 13px;
+}
+.no-gutters {
+    padding: 0px;
+}
+.error {
+	border: solid 2px #FF0000;
+}
