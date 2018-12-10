@@ -1,0 +1,105 @@
+#background_space {
+	width: 100%;
+	height:500px;
+	background-image: url("../index/image/index-background2.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media only screen and (max-width: 768px){
+#background_space {
+	height: 300px;
+}
+}
+.navbar-brand img {
+	width: 55px;
+	height: auto;
+}
+
+#footer {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+.page-footer img{
+    width: 100%;
+    height: auto;
+}
+
+.one-line2{
+    font-size: 15px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-align: center;
+}
+
+#slogan {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content {
+	padding: 10px 20px;
+	text-align: justify;
+	font-size: 16px;
+}
+.archive_item {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height:40px;
+}
+
+#e27 {
+	background-image: url("./images/e27.png");
+}
+
+#tech_asia {
+	background-image:url("./images/teach-asia.png");
+}
+
+#top100 {
+	background-image:url("./images/top-100.png");
+}
+
+#fbnc {
+	background-image:url("./images/fbnc.png");
+}
+
+.achivement {
+	height: 50px; 
+	float:left;
+}
+
+.list-awards {
+	display: inline-block;
+	width:100%;
+}
+
+.media_header {
+	width: 64px;
+	height:64px;
+}
+
+.Advantages {
+	width: 90px;
+	max-width: 100%;
+	display: unset;
+	vertical-align: middle;
+}
+
+#divFooter {
+		background-color: #d6d4d4;
+}
+
+.no-gutters {
+	padding: 0px;
+}
+
+.page-footer p{
+	font-size: 14px;
+}
