@@ -33,25 +33,29 @@
     $sql = "SELECT * FROM info_house WHERE ";
 
     if($typeOfHouse != "House"){
-        $sql += "loaicanho =" . $typeOfHouse . "AND";
+        $sql = $sql . "loaicanho = " . "'" . $typeOfHouse . "'" . " AND ";
     }
     if($typeOfProject != "Project"){
-        $sql += "loaiduan =" . $typeOfProject . "AND";
+        $sql = $sql . "loaiduan = " . "'" . $typeOfProject . "'" . " AND ";
     }
     if($numberBedroom != "Bedroom"){
-        $sql += "bedroom =" . interval($numberBedroom) . "AND";
+        $sql = $sql . "bedroom = " . (int)$numberBedroom . " AND ";
     }
     if($numberBathroom != "Bathroom"){
-        $sql += "bathroom =" . interval($numberBathroom) . "AND";
+        $sql = $sql . "bathroom = " . (int)$numberBathroom . " AND ";
     }
-    if($minPrice != "Min Price" && $maxPrice != "Max Price"){
-        $sql += "price >=" . interval($minPrice) . "AND" . "price <=" . interval($maxPrice) . "AND";
+
+    if($minPrice != "Min Price" ){
+        $sql = $sql . "price >= " . (int)$minPrice . " AND ";
+    }
+    if($maxPrice != "Max Price"){
+        $sql = $sql . "price <=" . (int)$maxPrice . " AND ";
     }
     if($numberPeopleCanLive != "Number People can live"){
-        $sql += "number_people_in_house =" . interval($numberPeopleCanLive) . "AND";
+        $sql = $sql . "number_people_in_house = " . (int)$numberPeopleCanLive . " AND ";
     }
     if($furnishment != "Furnishment"){
-        $sql += "noithat =" . $furnishment . "AND";
+        $sql = $sql . "noithat = " . "'" . $furnishment . "'" . " AND ";
     }
 
     if($kitchen == "false"){
