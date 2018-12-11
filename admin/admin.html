@@ -1,12 +1,14 @@
 <?php
 session_start();
-$cookie_name = "user";
+$cookie_name = "admin";
 
-$SessionName = "Guess";
 if (isset($_COOKIE[$cookie_name]))
 {
-	$_SESSION[$_COOKIE[$cookie_name]] = true;
 	$SessionName = $_COOKIE[$cookie_name];
+}
+else{
+	header("Location: ../index/index.html");
+	exit();
 }
 ?>
 <!DOCTYPE html>
@@ -61,11 +63,11 @@ aria-hidden="true">
                 	<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" style="font-size:18px" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo  $SessionName ?></a>
 					<?php
-						if ($SessionName != "Guess")
+						if (isset($_COOKIE[$cookie_name]) && !empty($_COOKIE[$cookie_name]))
 						{
 							echo '
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" onclick="logout($cookie_name)">Logout</a>
+							<a class="dropdown-item" onclick="logout()">Logout</a>
 							</div>
 							';
 						}
@@ -91,7 +93,7 @@ aria-hidden="true">
 			 	<th>Tài khoản</th>
 			 	<th>Tên</th>
 			 	<th>Họ</th>
-			 	<th>Trạng thái</th>
+			 	<th>Email</th>
 			 	<th>Hành động </th>
 			 </tr>
 		 </thead>
@@ -123,6 +125,7 @@ function requestToServer (callback)
 				{
 					if (result.trim() !== "false".trim())
 					{
+						console.log(result);
 						var data = JSON.parse(result);
 						callback(data);
 					}
@@ -143,7 +146,7 @@ function requestData(data)
 		for (var i = 0; i < data.userdata.length; i++)
 		{
 			/* Generate table list of user */
-			$("tbody").append("<tr><th scope='row'>" + i + "</th><td>" + data.userdata[i].username +"</td><td>" + data.userdata[i].firstname + "</td><td>"+ data.userdata[i].lastname +"</td><td>" + data.userdata[i].status + "</td><td><button type='button' class='btn btn-outline-warning' onclick=\"remove("+ i + ",\'" + data.userdata[i].username +"\')\">x</button><button type='button' class='btn btn-outline-info' onclick=\"reset('"+ data.userdata[i].username+"')\"> reset</button></td></tr>");
+			$("tbody").append("<tr><th scope='row'>" + i + "</th><td>" + data.userdata[i].username +"</td><td>" + data.userdata[i].firstname + "</td><td>"+ data.userdata[i].lastname +"</td><td>" + data.userdata[i].email + "</td><td><button type='button' class='btn btn-outline-warning' onclick=\"remove("+ i + ",\'" + data.userdata[i].username +"\')\">x</button><button type='button' class='btn btn-outline-info' onclick=\"reset('"+ data.userdata[i].username+"')\"> reset</button></td></tr>");
 
 		}
 	}
@@ -177,6 +180,13 @@ function reset(username)
 	request.data = username;
 	requestToServer(console.log);
 
+}
+
+/* logout */
+function logout()
+{
+	document.cookie = 'admin=;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
+	location.reload();
 }
 </script>
 </body>

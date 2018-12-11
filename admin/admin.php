@@ -1,6 +1,4 @@
 <?php	
-	session_start();
-
 	/* Database info */
 	$host = "localhost";
 	$dbname = "admin";
@@ -13,15 +11,15 @@
 		var $username;
 		var $firstname;
 		var $lastname;
-		var $status;
+		var $email;
 
 		/* Constructer */
-		function __construct($username, $firstname, $lastname, $status)
+		function __construct($username, $firstname, $lastname, $email)
 		{
 			$this->username = $username;
 			$this->firstname = $firstname;
 			$this->lastname = $lastname;
-			$this->status = $status;
+			$this->email = $email;
 		}
 
 	}
@@ -44,17 +42,17 @@
 	$conn = mysqli_connect($host, $username, $password, $dbname);
 
 	/* Check connection */	
-	if ($conn->connect_error)
+	if (!$conn)
 	{
-		die("Connection failed: ". $conn->connect_error);
+		die("Connection failed: ". mysqli_connect_errori());
 	}
 
 	function dataToClient()
 	{
 		global $conn;
 		/* Select data from database */
-		$sql = "SELECT username, firstname, lastname FROM info_user";
-   		$result = $conn->query($sql);
+		$sql = "SELECT username, firstname, lastname, email FROM info_user";
+   		$result = mysqli_query($conn, $sql);
 		$response ;
 		$userdata = [];
 		$state = "empty";
@@ -70,8 +68,7 @@
 				}
 
 				/* Get online status */
-				$status = $_SESSION[$row["username"]] ? 'Online': 'Offline'; 
-				$user = new User($row['username'], $row['firstname'], $row['lastname'], $status);
+				$user = new User($row['username'], $row['firstname'], $row['lastname'], $row['email']);
 				array_push($userdata,$user);
 			}
 			/* respone to server */
@@ -82,7 +79,7 @@
 		{
 			/* if empty respone empty*/
 			
-			response = new Response($state, $userdata);
+			$response = new Response($state, $userdata);
 
 		}
 		
