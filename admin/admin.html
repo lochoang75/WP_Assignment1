@@ -142,7 +142,7 @@ function requestData(data)
 	if (data.result.trim() === "success".trim())
 	{
 		request.action = "requestData";
-		var tableText ='';
+		$("tbody").html('');
 		for (var i = 0; i < data.userdata.length; i++)
 		{
 			/* Generate table list of user */
